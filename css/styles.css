@@ -11,17 +11,32 @@ body {
   font-family: var(--main-font);
 }
 
-.link {
-  text-decoration: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
-.list {
-  list-style: none;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-.address {
-  font-style: normal;
+/* =============  CONTAINER ============= */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
+/* ============= END CONTAINER ============= */
+
 /* ============= COMPONENTS ============= */
 .logo {
   font-family: var(--secondary-font);
@@ -31,6 +46,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   cursor: pointer;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-left: 215px;
 }
 
 .title {
@@ -42,6 +60,17 @@ body {
   color: var(--main-color);
 }
 
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.address {
+  font-style: normal;
+}
 /* ============= END COMPONENTS ============= */
 
 /*===============HEADER================*/
@@ -49,7 +78,11 @@ body {
   color: #000000;
 }
 
+.navigation-list {
+  display: flex;
+}
 .navigation-link {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -73,6 +106,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-color);
   cursor: pointer;
+  display: flex;
 }
 
 .contact-link:hover,
@@ -87,6 +121,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-color);
   cursor: pointer;
+  display: flex;
 }
 
 .tel-link:hover,
@@ -154,6 +189,9 @@ body {
 /*===============END HERO================*/
 
 /*===============CHARACTERISTICS================*/
+.characteristics-list {
+  display: flex;
+}
 .characteristics-suptitle {
   font-weight: 700;
   font-size: 14px;
@@ -202,7 +240,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-color);
   cursor: pointer;
-  font-family: inherit;
 }
 .gallery-button:hover,
 .gallery-button:focus {
