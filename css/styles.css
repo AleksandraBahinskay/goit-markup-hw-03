@@ -152,8 +152,7 @@ img {
 
 /* =================ГЕРОЙ===================== */
 .hero {
-  padding: 200px 0;
-
+  padding: 200px 452px;
   background-color: var(--footer-bgc);
   text-align: center;
 }
