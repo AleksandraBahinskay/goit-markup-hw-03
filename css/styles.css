@@ -113,10 +113,6 @@ img {
   color: #212121;
 }
 
-.header .link {
-  padding: 24px 0;
-}
-
 .header-contacts .link {
   color: #757575;
 }
@@ -133,6 +129,8 @@ img {
 .header .container {
   display: flex;
   align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .site-nav .list {
