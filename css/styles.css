@@ -37,6 +37,7 @@
 
   /* Рамка карточек проектов в портфолио */
   --project-border-color: #eeeeee;
+  --white: #ffffff;
 }
 
 body {
@@ -73,7 +74,7 @@ img {
 }
 
 .container {
-  max-width: 1200px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -87,15 +88,15 @@ img {
   line-height: 1.2;
   font-weight: 700;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--action-color);
 }
 
 .logo-header-part {
-  color: #000000;
+  color: var(--header-part-logo-color);
 }
 
 .logo-footer-part {
-  color: #ffffff;
+  color: var(--footer-part-logo-color);
 }
 /* =============КОНЕЦ ЛОГО============== */
 
@@ -110,11 +111,11 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--main-title-color);
 }
 
 .header-contacts .link {
-  color: #757575;
+  color: var(--paragraph-color);
 }
 
 .action:hover,
@@ -133,38 +134,57 @@ img {
   padding-bottom: 25px;
 }
 
+.site-nav {
+  display: flex;
+}
+
 .site-nav .list {
   display: flex;
-  width: 294px;
-  justify-content: space-between;
+}
+
+.list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-contacts {
   display: flex;
-  min-width: 307px;
+  align-items: center;
   margin-left: auto;
-  justify-content: space-between;
+}
+
+.contacts-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contacts-link:not(:last-child) {
+  margin-right: 50px;
 }
 
 /* ===================КОНЕЦ ШАПКИ================== */
 
 /* =================ГЕРОЙ===================== */
 .hero {
-  padding: 200px 452px;
+  padding: 200px 0;
   background-color: var(--footer-bgc);
   text-align: center;
 }
 
 .hero-title {
   margin: 0 auto;
-  width: 696px;
+  max-width: 696px;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.363636363636364;
+  line-height: 1.36;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .hero-btn {
@@ -175,8 +195,8 @@ img {
   line-height: 1.875;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--white);
+  background-color: var(--action-color);
   border: transparent;
   border-radius: 4px;
   cursor: pointer;
@@ -310,7 +330,7 @@ img {
 }
 
 .team-item-thumb {
-  padding: 30px 0;
+  padding: 30px 15px;
 }
 
 .team-member {
@@ -409,6 +429,7 @@ img {
 .footer .logo {
   display: block;
   margin-bottom: 20px;
+  margin-right: 0;
 }
 
 .address-text,
